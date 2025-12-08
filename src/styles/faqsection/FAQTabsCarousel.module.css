@@ -1,0 +1,177 @@
+/* ================================
+   TABS — METAL TEMPLARIO (TRANSPARENTE)
+================================ */
+
+.tabList {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* TAB metálico transparente */
+.tabItem {
+  position: relative;
+  padding: 0.9rem 1.8rem;
+
+  background: transparent; /* 🔥 transparente */
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+
+  /* Borde acero bruñido + brillo frío */
+  border: 1px solid rgba(180, 180, 180, 0.35);
+  outline: 3px solid rgba(120, 160, 200, 0.18);
+  outline-offset: -3px;
+
+  color: #d7d7d7;
+  font-family: var(--font-raleway);
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.tabItem:hover {
+  transform: translateY(-4px);
+  background: rgba(50, 50, 50, 0.2); /* leve sombreado para hover */
+  border-color: rgba(210, 210, 210, 0.55);
+}
+
+/* TAB activo — metal pulido + brillo */
+.tabItemActive {
+  background: rgba(80, 80, 80, 0.25); /* transparente con degradado leve */
+  color: #ffffff;
+
+  border-color: rgba(220, 220, 220, 0.85);
+  outline-color: rgba(150, 190, 230, 0.28);
+}
+
+/* línea inferior azul eléctrico */
+.tabItem::after {
+  content: "";
+  display: block;
+  height: 3px;
+
+  background: linear-gradient(90deg, #5ab6ff, #9dd4ff, #5ab6ff);
+  width: 0;
+  margin: 8px auto 0;
+  border-radius: 4px;
+
+  transition: width 0.25s ease;
+}
+
+.tabItemActive::after {
+  width: 90%;
+}
+
+/* ================================
+   PREGUNTAS — TARJETAS DE ACERO TRANSPARENTES
+================================ */
+
+.questionList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 760px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+/* tarjeta metálica transparente */
+.questionItem {
+  width: 100%;
+  border-radius: 14px;
+  padding: 1.4rem 1.7rem;
+
+  background: transparent; /* 🔥 transparente */
+  border: 2px solid rgba(160, 160, 160, 0.35);
+  outline: 4px solid rgba(120, 160, 200, 0.18);
+  outline-offset: -6px;
+
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
+
+  cursor: pointer;
+  transition: all 0.28s ease;
+}
+
+.questionItem:hover {
+  transform: translateY(-3px);
+  background: rgba(85, 85, 85, 0.2); /* leve sombreado en hover */
+  border-color: rgba(200, 200, 200, 0.55);
+  outline-color: rgba(140, 170, 210, 0.28);
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.55);
+}
+
+/* pregunta */
+.questionText {
+  color: #e5e5e5;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 1.12rem;
+}
+
+/* ================================
+   RESPUESTA — AZUL GLACIAL
+================================ */
+
+.answerText {
+  max-width: 680px;
+  text-align: center;
+
+  padding-top: 0.7rem;
+
+  color: #d8eaff;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 1.03rem;
+  line-height: 1.6;
+
+  opacity: 0.97;
+
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* ================================
+   CHEVRON — METAL + BRILLO FRÍO
+================================ */
+
+.chevron {
+  color: #9ccaff;
+  opacity: 0.9;
+  transition: transform 0.28s ease, opacity 0.22s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .tabItem {
+    padding: 0.75rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .questionItem {
+    padding: 1.1rem 1.2rem;
+  }
+
+  .questionText {
+    font-size: 1rem;
+  }
+}

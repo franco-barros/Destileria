@@ -1,0 +1,64 @@
+/* =============================
+   ABOUT SECTION — TEMPLARIA
+============================== */
+
+.aboutSection {
+  --amber: #c88a2a;
+  --gold: #d5a253;
+  --wood-dark: #4a2e1b;
+  --black-carbon: #0d0d0d;
+  --wheat: #f5e3c0;
+
+  position: relative;
+  padding: 5rem 1rem;
+  background: linear-gradient(
+    to bottom,
+    #1c1c1c 0%,
+    #0a0a0a 40%,
+    #0a0a0a 60%,
+    #1c1c1c 100%
+  );
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-rethink-sans);
+  color: var(--wheat);
+  overflow: hidden;
+}
+
+/* ============================
+      BADGE
+============================ */
+.badgeWrapper {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  background: linear-gradient(
+    135deg,
+    #b5832b 0%,
+    #c88a2a 30%,
+    #d5a253 60%,
+    #c88a2a 100%
+  );
+
+  padding: 0.55rem 1.25rem;
+  border-radius: 9999px;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1c1c1c;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  outline: 2px solid rgba(255, 255, 255, 0.08);
+  outline-offset: -4px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}

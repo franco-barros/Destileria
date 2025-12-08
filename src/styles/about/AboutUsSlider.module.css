@@ -1,0 +1,70 @@
+/* =============================
+   ABOUT SECTION — SLIDER (MOBILE)
+============================== */
+.sliderSection {
+  position: relative;
+  padding: 4rem 0.5rem;
+  width: 100%;
+  overflow: hidden;
+
+  /* Mismo fondo templario que el padre */
+  background: transparent;
+
+  color: var(--wheat);
+  font-family: var(--font-rethink-sans);
+}
+
+/* Background texture */
+.sliderSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background-color: transparent;
+
+  background-image: radial-gradient(
+      circle at 20% 20%,
+      rgba(213, 162, 83, 0.14) 0 2px,
+      transparent 2px 26px
+    ),
+    radial-gradient(
+      circle at 80% 60%,
+      rgba(200, 138, 42, 0.12) 0 2px,
+      transparent 2px 34px
+    ),
+    radial-gradient(
+      circle at 40% 80%,
+      rgba(245, 227, 192, 0.12) 0 1.6px,
+      transparent 1.6px 30px
+    );
+
+  background-size: 90px 90px, 110px 110px, 80px 80px;
+  opacity: 0.75;
+  filter: contrast(1.5) brightness(1.1) blur(0.7px);
+
+  mix-blend-mode: overlay;
+  transform: scale(1.2);
+  pointer-events: none;
+}
+
+/* Keen Slider ajustes */
+.keenSlider {
+  position: relative;
+  z-index: 5;
+  overflow: visible !important;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Forzar ancho del slide */
+:global(.keen-slider__slide) {
+  width: 100% !important;
+}

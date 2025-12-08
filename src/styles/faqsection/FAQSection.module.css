@@ -1,0 +1,126 @@
+/* ================================
+   FAQ SECTION — METÁLICO TEMPLARIO
+================================ */
+
+.faqSection {
+  --amber: #c88a2a;
+  --gold: #d5a253;
+  --steel-dark: #1d1d1d;
+  --steel: #3a3a3a;
+  --steel-light: #6b6b6b;
+  --black-carbon: #0f0f0f;
+  --wheat: #f5e3c0;
+
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 1.5rem 6.5rem;
+
+  /* FONDO: acero pulido + viñeta */
+  background: linear-gradient(
+    to bottom,
+    #1c1c1c 0%,
+    #0a0a0a 40%,
+    #0a0a0a 60%,
+    #1c1c1c 100%
+  );
+  color: var(--wheat);
+  text-align: center;
+  z-index: 0;
+
+  /* brillo metálico interno */
+  box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.08),
+    inset 0 -50px 120px rgba(0, 0, 0, 0.55);
+}
+
+/* ----------------------------------
+   BADGE — METAL DORADO TEMPLARIO
+----------------------------------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 215, 150, 0.65) 0%,
+    /* brillo inicial */ #b5832b 15%,
+    var(--amber) 40%,
+    var(--gold) 65%,
+    #ffdf9c 80%,
+    /* highlight metálico */ var(--gold) 100%
+  );
+
+  padding: 0.55rem 1.25rem;
+  border-radius: 9999px;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #271d12;
+
+  /* borde + bisel metálico */
+  border: 1px solid rgba(255, 240, 200, 0.55);
+  outline: 3px solid rgba(255, 180, 80, 0.25);
+  outline-offset: -3px;
+
+  box-shadow: inset 0 0 18px rgba(255, 240, 200, 0.45),
+    inset 0 0 32px rgba(255, 200, 130, 0.35), 0 10px 26px rgba(0, 0, 0, 0.55);
+
+  margin-bottom: 2.2rem;
+}
+
+/* ----------------------------------
+   DESCRIPCIÓN — PLACA DE ACERO CON BRILLO
+----------------------------------- */
+.description {
+  font-size: 1.18rem;
+  font-family: var(--font-rethink-sans);
+  font-weight: 300;
+
+  color: var(--wheat);
+  opacity: 0.97;
+  line-height: 1.7;
+  letter-spacing: 0.35px;
+
+  max-width: 780px;
+  margin: 0 auto 3.4rem;
+
+  /* PLACA METÁLICA */
+  background: linear-gradient(
+    135deg,
+    rgba(130, 130, 130, 0.27),
+    rgba(80, 80, 80, 0.24),
+    rgba(40, 40, 40, 0.22)
+  );
+
+  padding: 1.8rem 1.4rem;
+  border-radius: 14px;
+
+  /* borde metálico + bisel iluminado */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  outline: 4px solid rgba(255, 255, 255, 0.12);
+  outline-offset: -5px;
+
+  /* reflejo de vidrio */
+  backdrop-filter: blur(7px);
+
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+
+  /* reflejo diagonal metálico */
+  box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.08),
+    inset -20px -20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ----------------------------------
+   RESPONSIVE
+----------------------------------- */
+@media (max-width: 768px) {
+  .faqSection {
+    padding: 4rem 1.2rem 5.5rem;
+  }
+
+  .description {
+    font-size: 1.05rem;
+    padding: 1.4rem 1.2rem;
+    margin-bottom: 2.8rem;
+  }
+}

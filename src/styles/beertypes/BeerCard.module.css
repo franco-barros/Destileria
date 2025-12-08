@@ -1,0 +1,72 @@
+/* =============================
+   CARD — CONTENEDOR PRINCIPAL
+============================= */
+
+.card {
+  background: #4a2e1b; /* wood-dark */
+  color: #f5e3c0; /* wheat */
+
+  border-radius: 16px;
+  padding: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+
+  overflow: hidden; /* Evita cortes extraños en mobile */
+}
+
+/* =============================
+   IMAGEN
+============================= */
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 220px; /* Ajustable */
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* =============================
+   TEXTOS
+============================= */
+
+.name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 0.4rem;
+  color: #d5a253; /* gold */
+}
+
+.style {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  color: #c88a2a; /* amber */
+}
+
+.abv {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  background: rgba(197, 162, 83, 0.2);
+  padding: 4px 10px;
+  border-radius: 8px;
+  color: #d5a253;
+}
+
+.description {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #f5e3c0;
+}

@@ -1,0 +1,19 @@
+.mobileSlider {
+  background: transparent;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileSlider {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  .slider {
+    overflow: visible;
+  }
+
+  .slide {
+    padding: 0.5rem 0;
+  }
+}

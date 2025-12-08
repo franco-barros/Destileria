@@ -1,0 +1,143 @@
+/* ================================
+   FOOTER — TEMPLARIA PREMIUM
+================================ */
+
+.footer {
+  --amber: #c88a2a;
+  --gold: #d5a253;
+  --wood-dark: #4a2e1b;
+  --carbon: #1c1c1c;
+  --wheat: #f5e3c0;
+
+  background: var(--carbon);
+  color: var(--wheat);
+  padding: 3rem 1.5rem 2rem;
+  font-family: var(--font-rethink-sans);
+  border-top: 2px solid rgba(200, 138, 42, 0.25);
+}
+
+.content {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 2rem;
+}
+
+/* ----------------------------------
+   SECTION
+----------------------------------- */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid rgba(213, 162, 83, 0.45);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: var(--wheat);
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* ----------------------------------
+   LIST LINKS
+----------------------------------- */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 0.6rem;
+}
+
+.list li a,
+.linkButton {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--wheat);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.25s ease, letter-spacing 0.25s ease;
+}
+
+.list li a:hover,
+.linkButton:hover {
+  color: var(--gold);
+  letter-spacing: 0.5px;
+}
+
+.destillerLink {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.9rem 1.2rem;
+  border-radius: 10px;
+  margin-top: 0.6rem;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.destillerLink:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.destillerLogo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.smallDescription {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+/* ----------------------------------
+   BOTTOM BAR
+----------------------------------- */
+.bottomBar {
+  border-top: 1px solid rgba(213, 162, 83, 0.3);
+  padding-top: 1.2rem;
+  text-align: center;
+}
+
+.copy {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  color: var(--wheat);
+}
+
+/* ----------------------------------
+   MOBILE — CENTER
+----------------------------------- */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .subtitle,
+  .description,
+  .list li {
+    justify-content: center;
+  }
+}
