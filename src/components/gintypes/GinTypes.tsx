@@ -21,7 +21,7 @@ const gins: Gin[] = [
     name: "Destiller One Original",
     type: "London Dry Gin",
     abv: "43%",
-    image: "/images/gin-original.png",
+    image: "/images/Gin1.jpg",
     botanicals: "Enebro, coriandro, piel de limón y raíz de angélica",
     description:
       "Un gin equilibrado, limpio y aromático. Destilado lentamente para obtener un perfil fresco y elegante.",
@@ -31,7 +31,7 @@ const gins: Gin[] = [
     name: "Destiller One Citrus",
     type: "Citrus Botanical Gin",
     abv: "40%",
-    image: "/images/gin-citrus.png",
+    image: "/images/Gin2.jpg",
     botanicals: "Pomelo rosado, lima, cedrón y enebro",
     description:
       "Explosión cítrica con notas brillantes y refrescantes. Perfecto para tragos ligeros y veraniegos.",
@@ -41,7 +41,7 @@ const gins: Gin[] = [
     name: "Destiller One Spice",
     type: "Botanical Spiced Gin",
     abv: "45%",
-    image: "/images/gin-spice.png",
+    image: "/images/Gin4.jpg",
     botanicals: "Cardamomo, pimienta rosa, canela y enebro",
     description:
       "Complejo, cálido y especiado. Ideal para cocktails con carácter.",

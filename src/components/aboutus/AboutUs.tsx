@@ -9,19 +9,19 @@ import { useEffect, useState } from "react";
 
 const aboutData = [
   {
-    src: "/images/gin1.png",
+    src: "/images/Destileria1.jpg",
     alt: "Destilación artesanal de gin",
     text: "En Destiller One elaboramos gin artesanal premium utilizando botánicos cuidadosamente seleccionados y un proceso de destilación preciso que resalta aromas frescos y sabores equilibrados.",
     reverse: false,
   },
   {
-    src: "/images/gin2.png",
+    src: "/images/Destileria2.jpg",
     alt: "Botánicos seleccionados",
     text: "Trabajamos con enebro, cítricos, especias y hierbas de alta calidad para crear un perfil aromático limpio, elegante y distintivo. Cada lote es supervisado para mantener nuestra identidad única.",
     reverse: true,
   },
   {
-    src: "/images/gin3.png",
+    src: "/images/Gin3.jpg",
     alt: "Proceso de destilación",
     text: "Nuestro proceso combina técnicas tradicionales con un enfoque moderno, logrando un gin con carácter propio, suavidad en boca y una presencia aromática que lo hace inconfundible.",
     reverse: false,
