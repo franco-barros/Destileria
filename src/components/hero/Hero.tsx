@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
         <div className={styles.logoLayer}>
           <div className={styles.logoInner}>
             <Image
-              src="/icons/Destileria.png"
+              src="/icons/Destileria.png" // <-- Cambialo por tu logo real
               alt="Destiller One Logo"
               fill
               priority
@@ -35,11 +35,12 @@ const Hero: React.FC = () => {
         </div>
 
         <h1 className={styles.title}>
-          Cerveza artesanal con alma de Cardenal Amarillo.
+          Gin artesanal premium de Destiller One.
         </h1>
 
         <p className={styles.phrase}>
-          Sabores intensos, raíces locales y carácter propio en cada vaso.
+          Botánicos seleccionados, destilación precisa y un carácter que define
+          la excelencia.
         </p>
 
         <div className={styles.buttons}>

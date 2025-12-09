@@ -1,6 +1,6 @@
 "use client";
 
-import { Users } from "lucide-react";
+import { FlaskRound } from "lucide-react";
 import styles from "../../styles/about/AboutUs.module.css";
 import { FadeInOnScroll } from "../shared/fadeInonscroll";
 import AboutBlock from "./aboutblock";
@@ -9,21 +9,21 @@ import { useEffect, useState } from "react";
 
 const aboutData = [
   {
-    src: "/images/Cerveza.png",
-    alt: "Cerveza artesanal 1",
-    text: "En Cardenal Amarillo elaboramos cerveza artesanal con dedicación, pasión y carácter propio. Trabajamos con maltas seleccionadas y lúpulos de calidad para lograr perfiles llenos de aroma y sabor.",
+    src: "/images/gin1.png",
+    alt: "Destilación artesanal de gin",
+    text: "En Destiller One elaboramos gin artesanal premium utilizando botánicos cuidadosamente seleccionados y un proceso de destilación preciso que resalta aromas frescos y sabores equilibrados.",
     reverse: false,
   },
   {
-    src: "/images/Cerveza2.png",
-    alt: "Cerveza artesanal 2",
-    text: "Cuidamos cada etapa del proceso cervecero, respetando métodos tradicionales y potenciándolos con creatividad para ofrecer una experiencia única en cada pinta.",
+    src: "/images/gin2.png",
+    alt: "Botánicos seleccionados",
+    text: "Trabajamos con enebro, cítricos, especias y hierbas de alta calidad para crear un perfil aromático limpio, elegante y distintivo. Cada lote es supervisado para mantener nuestra identidad única.",
     reverse: true,
   },
   {
-    src: "/images/Cerveza4.png",
-    alt: "Cerveza artesanal 3",
-    text: "Nuestras cervezas se destacan por su equilibrio, frescura y personalidad. En cada lote buscamos transmitir la esencia de Cardenal Amarillo: artesanal, auténtica y cercana.",
+    src: "/images/gin3.png",
+    alt: "Proceso de destilación",
+    text: "Nuestro proceso combina técnicas tradicionales con un enfoque moderno, logrando un gin con carácter propio, suavidad en boca y una presencia aromática que lo hace inconfundible.",
     reverse: false,
   },
 ];
@@ -43,7 +43,7 @@ const AboutUs: React.FC = () => {
       <FadeInOnScroll>
         <div className={styles.badgeWrapper}>
           <span className={styles.badge}>
-            <Users size={18} style={{ marginRight: "0.4rem" }} />
+            <FlaskRound size={18} style={{ marginRight: "0.4rem" }} />
             Sobre Nosotros
           </span>
         </div>

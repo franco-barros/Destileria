@@ -7,42 +7,62 @@ import { FadeInOnScroll } from "../../shared/fadeInonscroll";
 
 const faqItems = [
   {
-    category: "La Cervecería",
+    category: "El Gin",
     questions: [
       {
-        question: "¿Qué tipos de cerveza elaboran?",
+        question: "¿Qué tipo de gin producen?",
         answer:
-          "Producimos cervezas artesanales con procesos tradicionales. Contamos con estilos como IPA, Stout, Red Ale, Honey, Golden, Lager y ediciones especiales de temporada.",
+          "Elaboramos gin artesanal estilo London Dry, además de ediciones especiales infusionadas con botánicos locales y cítricos.",
       },
       {
-        question: "¿Dónde se encuentra ubicada la cervecería?",
+        question: "¿Qué botánicos utilizan?",
         answer:
-          "Estamos ubicados en Mar del Plata, con producción local y distribución regional.",
+          "Usamos enebro, coriandro, cardamomo, raíz de angélica, piel de cítricos y botánicos seleccionados según cada edición especial.",
       },
       {
-        question: "¿Las cervezas son 100% artesanales?",
+        question: "¿El gin es apto para celíacos?",
         answer:
-          "Sí. Elaboramos cada lote de manera artesanal, sin conservantes ni procesos industriales masivos.",
+          "Sí. Todo nuestro gin es libre de gluten, ya que proviene de alcohol destilado de alta pureza.",
       },
     ],
   },
   {
-    category: "Visitas y Reservas",
+    category: "Proceso de Destilación",
     questions: [
       {
-        question: "¿Se puede visitar la fábrica?",
+        question: "¿Cómo es el proceso de destilación?",
         answer:
-          "Sí. Contamos con visitas guiadas que muestran nuestro proceso de producción, historia templaria y degustación final.",
+          "Destilamos en alambique de acero inoxidable con maceración previa y redestilación lenta para lograr un gin más suave y aromático.",
       },
       {
-        question: "¿Necesito reserva para visitar?",
+        question: "¿Qué método de extracción utilizan?",
         answer:
-          "Recomendamos reservar, especialmente fines de semana y temporada. Podés hacerlo desde la web.",
+          "Combinamos maceración tradicional con vaporizado de botánicos para obtener aromas más frescos y equilibrados.",
       },
       {
-        question: "¿Ofrecen degustaciones?",
+        question: "¿Cuánto tiempo lleva producir un lote de gin?",
         answer:
-          "Sí. Disponemos de degustaciones con distintos estilos y charlas sobre maridaje.",
+          "El proceso completo puede demorar entre 2 y 5 días, dependiendo de la cantidad de botánicos y reposo posterior.",
+      },
+    ],
+  },
+  {
+    category: "Visitas y Experiencias",
+    questions: [
+      {
+        question: "¿Se puede visitar la destilería?",
+        answer:
+          "Sí. Ofrecemos visitas guiadas con explicación del proceso, recorrido por la sala de destilación y degustación final.",
+      },
+      {
+        question: "¿Necesito hacer reserva?",
+        answer:
+          "Recomendamos reservar con anticipación, especialmente fines de semana y eventos especiales.",
+      },
+      {
+        question: "¿Realizan catas y talleres?",
+        answer:
+          "Sí. Contamos con catas sensoriales y talleres sobre botánicos, técnicas de mixología y elaboración de gin.",
       },
     ],
   },
@@ -50,19 +70,19 @@ const faqItems = [
     category: "Compras y Envíos",
     questions: [
       {
-        question: "¿Hacen envíos a domicilio?",
+        question: "¿Hacen envíos a todo el país?",
         answer:
-          "Realizamos envíos en la ciudad y zonas cercanas. También contamos con retiro en el local.",
+          "Realizamos envíos a nivel nacional mediante correo y transporte seguro para bebidas espirituosas.",
       },
       {
-        question: "¿Puedo comprar barriles o latas para eventos?",
+        question: "¿Puedo comprar ediciones especiales?",
         answer:
-          "Sí. Ofrecemos barriles, latas y combos especiales para fiestas, bares y eventos particulares.",
+          "Sí. Lanzamos pequeños lotes experimentales que se pueden adquirir online o en la destilería.",
       },
       {
-        question: "¿Aceptan medios de pago digitales?",
+        question: "¿Qué medios de pago aceptan?",
         answer:
-          "Aceptamos tarjetas, transferencia, Mercado Pago y efectivo en el local.",
+          "Aceptamos tarjetas, transferencia bancaria, Mercado Pago y pagos en efectivo en el local.",
       },
     ],
   },

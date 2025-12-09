@@ -2,59 +2,66 @@
 
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/brewareas/BrewAreas.module.css";
-import { Beer, Wheat, Flame, Droplets, Hop, Factory } from "lucide-react";
+import {
+  FlaskConical,
+  Leaf,
+  Droplet,
+  Flame,
+  TestTube,
+  Recycle,
+} from "lucide-react";
 import BrewAreasMobile from "./brewareasmobile/BrewAreasMobile";
 import { FadeInOnScroll } from "../shared/fadeInonscroll";
 
-interface BrewArea {
+interface GinArea {
   id: string;
   title: string;
   description: string;
   icon?: React.ReactNode;
 }
 
-const brewAreas: BrewArea[] = [
+const ginAreas: GinArea[] = [
   {
     id: "1",
-    title: "Selección de Ingredientes",
+    title: "Selección de Botánicos",
     description:
-      "Elegimos maltas de calidad, lúpulos frescos y levaduras puras que definen el carácter auténtico de Cardenal Amarillo.",
-    icon: <Wheat size={28} />,
+      "Elegimos enebro, cítricos frescos y una variedad de botánicos especialmente seleccionados para definir el perfil aromático del gin.",
+    icon: <Leaf size={28} />,
   },
   {
     id: "2",
-    title: "Maceración y Cocción",
+    title: "Maceración",
     description:
-      "Realizamos un macerado controlado y una cocción precisa para extraer los sabores y aromas que distinguen cada estilo.",
-    icon: <Flame size={28} />,
+      "Los botánicos se maceran en alcohol de alta pureza para extraer aromas, aceites esenciales y sabores únicos.",
+    icon: <Droplet size={28} />,
   },
   {
     id: "3",
-    title: "Fermentación",
+    title: "Destilación",
     description:
-      "Cada cerveza fermenta el tiempo necesario para desarrollar cuerpo, aroma y la personalidad que buscamos en cada lote.",
-    icon: <Droplets size={28} />,
+      "Realizamos una destilación precisa y controlada en alambique de cobre para obtener un destilado limpio y equilibrado.",
+    icon: <Flame size={28} />,
   },
   {
     id: "4",
-    title: "Lupulado",
+    title: "Rectificación",
     description:
-      "Aplicamos técnicas de lupulado clásico y moderno —whirlpool, dry hopping— para obtener perfiles aromáticos equilibrados e intensos.",
-    icon: <Hop size={28} />,
+      "Eliminamos impurezas y afinamos el espíritu para asegurar un gin suave, aromático y con un carácter impecable.",
+    icon: <TestTube size={28} />,
   },
   {
     id: "5",
-    title: "Maduración",
+    title: "Reposo",
     description:
-      "Respetamos el tiempo de reposo de cada estilo para lograr suavidad, equilibrio y una cerveza lista para disfrutarse al máximo.",
-    icon: <Factory size={28} />,
+      "El gin descansa el tiempo necesario para que los botánicos integren sus matices y desarrollen un sabor redondo.",
+    icon: <Recycle size={28} />,
   },
   {
     id: "6",
-    title: "Nuestros Estilos",
+    title: "Nuestros Gins",
     description:
-      "Creamos variedades como IPA, Golden, Scottish, Porter y más, siempre con el sello distintivo de Cardenal Amarillo.",
-    icon: <Beer size={28} />,
+      "Creamos variedades como London Dry, cítricos, especiados y ediciones especiales, siempre con identidad propia.",
+    icon: <FlaskConical size={28} />,
   },
 ];
 
@@ -68,8 +75,8 @@ const BrewAreas: React.FC = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const renderArea = (area: BrewArea) => (
-    <article key={area.id} id={`brew-${area.id}`} className={styles.areaCard}>
+  const renderArea = (area: GinArea) => (
+    <article key={area.id} id={`gin-${area.id}`} className={styles.areaCard}>
       {area.icon && <div className={styles.iconWrapper}>{area.icon}</div>}
       <h4>{area.title}</h4>
       <p>{area.description}</p>
@@ -77,27 +84,28 @@ const BrewAreas: React.FC = () => {
   );
 
   return (
-    <section id="section-brewareas" className={styles.brewAreasSection}>
+    <section id="section-ginareas" className={styles.brewAreasSection}>
       <FadeInOnScroll>
         <div className={styles.badgeWrapper}>
           <span className={styles.badge}>
-            <Beer size={18} style={{ marginRight: "0.4rem" }} />
-            Proceso Cervecero
+            <FlaskConical size={18} style={{ marginRight: "0.4rem" }} />
+            Proceso de Destilación
           </span>
         </div>
 
         <p className={styles.description}>
-          En Cardenal Amarillo producimos cerveza artesanal cuidando cada etapa
-          del proceso. Combinamos técnica, pasión y buenos ingredientes para
-          crear sabores auténticos, equilibrados y llenos de carácter.
+          En nuestra destilería elaboramos gin artesanal cuidando cada etapa del
+          proceso. Seleccionamos botánicos de calidad y aplicamos técnicas
+          tradicionales para crear un destilado limpio, aromático y lleno de
+          carácter.
         </p>
       </FadeInOnScroll>
 
       <FadeInOnScroll delay={0.15}>
         {isMobile ? (
-          <BrewAreasMobile brewAreas={brewAreas} />
+          <BrewAreasMobile brewAreas={ginAreas} />
         ) : (
-          <div className={styles.gridDesktop}>{brewAreas.map(renderArea)}</div>
+          <div className={styles.gridDesktop}>{ginAreas.map(renderArea)}</div>
         )}
       </FadeInOnScroll>
     </section>

@@ -3,23 +3,23 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-import BeerCard from "../beercard";
-import styles from "../../../styles/beertypes/BeerSlider.module.css";
+import GinCard from "../gincard";
+import styles from "../../../styles/gintypes/GinSlider.module.css";
 
-interface Beer {
+interface Gin {
   id: number;
   name: string;
-  style: string;
+  type: string; // reemplaza “style”
   abv: string;
   image: string;
   description: string;
 }
 
 interface SliderProps {
-  beers: Beer[];
+  gins: Gin[];
 }
 
-export default function BeerTypesSlider({ beers }: SliderProps) {
+export default function GinTypesSlider({ gins }: SliderProps) {
   const [sliderRef] = useKeenSlider({
     loop: true,
     slides: {
@@ -31,9 +31,9 @@ export default function BeerTypesSlider({ beers }: SliderProps) {
   return (
     <div className={styles.mobileSlider}>
       <div ref={sliderRef} className={`keen-slider ${styles.slider}`}>
-        {beers.map((beer) => (
-          <div className={`keen-slider__slide ${styles.slide}`} key={beer.id}>
-            <BeerCard beer={beer} />
+        {gins.map((gin) => (
+          <div className={`keen-slider__slide ${styles.slide}`} key={gin.id}>
+            <GinCard gin={gin} />
           </div>
         ))}
       </div>

@@ -21,8 +21,8 @@ const FAQSection: React.FC = () => {
 
         {/* DESCRIPCIÓN */}
         <p className={styles.description}>
-          Encontrá respuestas a las preguntas más comunes sobre la cervecería
-          Cardenal amarillo y nuestro servicio.
+          Respondemos las dudas más comunes sobre nuestro gin artesanal, el
+          proceso de destilación y los servicios de nuestra destilería.
         </p>
 
         {/* TABS / CAROUSEL */}

@@ -37,30 +37,29 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* --- DESTILLER ONE --- */}
+        {/* --- CARDENAL AMARILLO LINK --- */}
         <div className={styles.section}>
-          <h4 className={styles.subtitle}>Explorá también</h4>
+          <h4 className={styles.subtitle}>Conocé más</h4>
 
           <a
-            href=""
+            href="https://cerveceria-neon.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.destillerLink}
           >
             <Image
               src="/icons/Logo.png"
-              alt="Destiller One"
+              alt="Cardenal Amarillo"
               width={48}
               height={48}
               className={styles.destillerLogo}
             />
-            <span>Ir a Destiller One</span>
+            <span>Ir a Cardenal Amarillo</span>
           </a>
 
-          {/* DESCRIPCIÓN EXTRA */}
           <p className={styles.smallDescription}>
-            Descubrí destilados artesanales creados con la misma dedicación y
-            pasión que nuestras cervezas.
+            Descubrí nuestra historia, nuestro proceso y todo lo que hace única
+            a nuestra destileria artesanal.
           </p>
         </div>
 
@@ -87,7 +86,7 @@ const Footer = () => {
 
       <div className={styles.bottomBar}>
         <p className={styles.copy}>
-          © 2025 Cardenal Amarillo | Todos los derechos reservados.
+          © 2025 Destiller One | Todos los derechos reservados.
         </p>
       </div>
     </footer>
