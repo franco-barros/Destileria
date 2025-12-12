@@ -77,13 +77,13 @@
 /* ----------------- WRAPPER ----------------- */
 
 .contactWrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
-  justify-content: center;
-  align-items: stretch;
   text-align: left;
+  align-items: stretch; /* 🔥 misma altura real */
 }
 
 /* ======================================================
@@ -92,21 +92,26 @@
 
 .contactInfo,
 .contactForm {
-  background: rgba(74, 46, 27, 0.85); /* madera oscura templaria */
+  background: rgba(74, 46, 27, 0.88);
   border: 2px solid var(--gold);
   outline: 4px solid rgba(255, 255, 255, 0.06);
   outline-offset: -6px;
 
   color: var(--wheat);
-  flex: 1;
   padding: 2.3rem;
   min-width: 320px;
-  min-height: 420px;
-  border-radius: 16px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+
+  /* 🔥 misma altura */
+  min-height: 480px;
+  height: 100%;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
 }
 
 /* ======================================================
@@ -121,7 +126,7 @@
 .infoTitle {
   color: var(--gold);
   font-weight: 700;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
 }
@@ -192,7 +197,7 @@
   flex: 1;
   max-width: 480px;
 
-  background: rgba(74, 46, 27, 0.86);
+  background: rgba(74, 46, 27, 0.88);
   border: 2px solid var(--gold);
   outline: 4px solid rgba(255, 255, 255, 0.07);
   outline-offset: -6px;
@@ -201,6 +206,7 @@
   border-radius: 16px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
   color: var(--wheat);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,10 +272,25 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
+/* LOGO */
+
 .bottomImageWrapper {
   margin-top: 1.8rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  /* 🔥 reserva espacio para el logo */
+  height: 140px;
+
+  /* permite que sobresalga visualmente si es más alto */
+  overflow: visible;
+}
+
+.bottomImageWrapper img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 /* ======================================================
@@ -278,9 +299,10 @@
 
 @media (max-width: 768px) {
   .contactWrapper {
+    display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 2rem;
+    text-align: center;
   }
 
   .contactInfo,
@@ -288,7 +310,7 @@
   .socialCard {
     min-width: 100%;
     padding: 1.9rem;
-    min-height: 420px;
+    min-height: 480px;
   }
 }
 

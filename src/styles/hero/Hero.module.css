@@ -75,7 +75,7 @@
 .content {
   position: relative;
   text-align: center;
-
+  margin-top: 2.8rem;
   background: rgba(60, 50, 40, 0.25); /* marrón templario suave */
   padding: 2rem;
   border-radius: 18px;

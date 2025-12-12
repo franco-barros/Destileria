@@ -47,26 +47,6 @@ const faqItems = [
     ],
   },
   {
-    category: "Visitas y Experiencias",
-    questions: [
-      {
-        question: "¿Se puede visitar la destilería?",
-        answer:
-          "Sí. Ofrecemos visitas guiadas con explicación del proceso, recorrido por la sala de destilación y degustación final.",
-      },
-      {
-        question: "¿Necesito hacer reserva?",
-        answer:
-          "Recomendamos reservar con anticipación, especialmente fines de semana y eventos especiales.",
-      },
-      {
-        question: "¿Realizan catas y talleres?",
-        answer:
-          "Sí. Contamos con catas sensoriales y talleres sobre botánicos, técnicas de mixología y elaboración de gin.",
-      },
-    ],
-  },
-  {
     category: "Compras y Envíos",
     questions: [
       {
